@@ -1,0 +1,4 @@
+import sys
+sys.path.insert(0, '/var/www/hubway/')
+sys.path.insert(0, '/var/www/hubway/hubway/webapp')
+from serve import app as application
