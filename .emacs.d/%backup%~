@@ -1,4 +1,143 @@
-import sys
-sys.path.insert(0, '/var/www/hubway/')
-sys.path.insert(0, '/var/www/hubway/hubway/webapp')
-from serve import app as application
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/pranjal/Dropbox/Fa12/6.s195/6.s195/" . "common-lib/")
+ ("/home/pranjal/Dropbox/Fa12/6.s195/" . "6.s195/")
+ ("/home/pranjal/Dropbox/Fa12/6.869/project/code/" . "poolvis/")
+ ("/home/pranjal/Dropbox/Fa12/6.869/project/" . "code/")
+ ("/home/pranjal/Dropbox/Fa12/6.869/" . "project/")
+ ("/home/pranjal/" . "Dropbox/")
+ ("/home/pranjal/Dropbox/Fa12/9.20/" . "project/")
+ ("/home/pranjal/Dropbox/Fa12/8.05/homework/" . "pset10/")
+ ("/home/pranjal/Dropbox/Fa12/8.05/" . "homework/")
+ ("/home/pranjal/Dropbox/Fa12/" . "6.s195/")
+ ("/home/pranjal/Dropbox/" . "Fa12/")
+ ("/home/pranjal/Dropbox/Fa12/8.13/reldyn/data/raw_with_fit/" . "50/")
+ ("/home/pranjal/Dropbox/Fa12/8.13/trapping/presentation/" . "plot/")
+ ("/home/pranjal/Dropbox/Fa12/8.13/trapping/" . "paper/")
+ ("/home/pranjal/Dropbox/Fa12/8.13/" . "trapping/")
+ ("/home/pranjal/Dropbox/Fa12/8.13/reldyn/data/" . "mag_fit/")
+ ("/home/pranjal/Dropbox/Fa12/8.13/reldyn/" . "plot/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/pranjal/"
+ "/home/pranjal/Dropbox/Fa12/6.s195/final/"
+ "/home/pranjal/Dropbox/Fa12/6.s195/6.s195/common-lib/"
+ "/home/pranjal/Dropbox/Fa12/8.13/trapping/paper/"
+ "/home/pranjal/Dropbox/Fa12/9.20/project/"
+ "/home/pranjal/Dropbox/Fa12/8.13/reldyn/paper/"
+ "/home/pranjal/Dropbox/Fa12/8.13/trapping/presentation/"
+ "/home/pranjal/Dropbox/Fa12/6.869/project/code/poolvis/"
+ "/home/pranjal/Dropbox/Fa12/8.13/reldyn/plot/"
+ "/home/pranjal/Dropbox/Fa12/9.20/"
+ "/home/pranjal/Dropbox/Fa12/8.13/reldyn/data/"
+ "/home/pranjal/Dropbox/Fa12/8.05/homework/pset10/"
+ "/home/pranjal/Dropbox/Fa12/8.13/trapping/presentation/plot/"
+ "/home/pranjal/Dropbox/Fa12/8.13/trapping/"
+ "/home/pranjal/Dropbox/Fa12/8.13/reldyn/data/B90Nov19/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ ".emacs"
+ "Mem2Module.bsv"
+ "WriteBackModule.bsv"
+ "Mem1Module.bsv"
+ "Exec1Module.bsv"
+ "RegReadModule.bsv"
+ "Exec2Module.bsv"
+ "DirPred.bsv"
+ "Decode.bsv"
+ "DecodeModule.bsv"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/pranjal/Dropbox/emacs/" (20676 10241) ".emacs~" ".git/" ".emacs-backups/" "./" ".emacs.d/" "../" ".emacs")
+
+ ("/home/pranjal/" (20676 10186) ".gimp-2.8/" ".steampath" ".dbus/" ".icons/" ".xmonad/" "./" "Pictures/" ".Xauthority" ".mission-control/" ".pulse-cookie" ".bash_logout" ".gtk-bookmarks" ".emacs.d/" ".macromedia/" ".gnome2/" ".bash_history" ".thumbnails/" "Bluespec-2012.05.beta1A/" "examples.desktop" "dropbox.tgz" ".steam/" "#.xmobarrc#" ".ssh/" ".pki/" "../" ".bashrc" "Desktop/" ".xsession-errors" ".texmf-var/" "Bluespec-2012.05.beta1A.tar.gz" ".config/" ".#.ido.last" ".ido.last~" ".gconf/" ".ido.last" ".pip/" "Downloads/" ".gitconfig" ".bashrc~" ".dmrc" ".cache/" ".cabal/" ".emacs" ".dmenu_cache" ".face" "bin/" ".adobe/" ".ghc/" ".matplotlib/" "Music/" ".profile" ".gstreamer-0.10/" ".dropbox-dist/" ".mozilla/" ".lesshst" ".steampid" ".ICEauthority" ".pulse/" ".dropbox/" "Videos/" ".xsession-errors.old" ".smex-items" "Dropbox/" "Documents/" "Public/" ".local/" "Templates/" ".compiz/")
+
+ ("/home/pranjal/Dropbox/" (20675 65073) "RelativisticDynamics/" "log/" "pranjal - 21.L432 essay 1.pdf" "._DaxInfo.pdf" "groceries/" "Getting Started.pdf" "4.330 midterm.pdf" "emacs/" "disco/" "4.330 midterm.odp" "olympiad.odt" "DaxInfo.pdf" "course plan.ods" "cpdt/" "dydtresume.pdf" "Skyrim/" "ticket.pdf" "6.01/" "20101126 meeting with rich.odt" "Fa12/" "./" "analysis+of+municipal+solid+waste+to+energy+market+in+india.pdf" "tv essay 1 full~" "dequeue/" "pranjal.key" "timedelays/" "notebooks/" "scans/" "2011/" "discoveryengine/" "tv essay 2 intro.doc" "Programs/" "Attachments/" "tv essay 2.pdf" "food.io/" ".htaccess" "NMR/" "Important Stuff/" "discovery.tblk/" "tv essay 1 full" "tv essay 2 intro.odt" "4.330 final.odt" "../" "Photos/" "Notes/" "Hackathons/" "Debate/" "4.330 midterm.odt" "tv essay 1~" "file" "Worms/" "4.330 gardens.odt" "Android intro.pdf" "Sp12/" "Exalted/" "bashacommandcenter/" "scibowl/" "Fa11/" "Rush 2011/" "maslab/" "Dropquest 2012/" "dominion.png" "highschool/" "Link to dominion.png" "multipasscell.doc" "elevpitch/" "workspace/" "speechrec/" "client.conf" "codesprint/" "rush/" "4.330 final.pdf" "4.330 final pres.pdf" "tv essay 2.odt" "bigfishgames_p91963473_s1_l1.exe" "4.330 proposal.odt" "4.330 new outline.odt" ".dropbox.cache/" "tv norms.odt" "Email attachments/" "RelativisticDynamics (1)/" "home_backup/" "D&D/" "Agreements/" "Books/" "tv essay 1.odt" "Putzhotos/" "pranjal.crt" "CardsAgainstHumanity.pdf" "ca.crt" "#tv essay 2 outline#" ".dropbox" "putz/" "21l.432 essay1notes.abw" "rfid/" "TCT_MAG_WINTER_2011_The_Conservative_Teen_Winter_2011_Issue.pdf" "4.330 final pres.odp" "slugtalks/" "crouching-teasha.jpg" "Backup/" "21l.432 essay1notes.doc" "Public/" "Euler/" "grabcut2.skp" "tv essay 1" "sad-keanu.jpg" "TheInternet/" "Biofuel Proposal.odt" "Neuvo-foo/" "Writings/" "4.330 comments.odt" "FeSpinEcho.csv")
+
+ ("/home/pranjal/Dropbox/Fa12/6.s195/final/" (20676 10160) "Proc.bsv" ".git/" "lib/" "./" "smips" "build/" "project.init" ".gitignore~" "../" "Booth.bsv" "Fetch1.bsv")
+
+ ("/home/pranjal/.xmonad/" (20673 559) "xmonad.errors" "./" "xmobar.conf" "xmonad.hi" "xmonad.hs" "../" "xmonad.hs~" "xmonad-x86_64-linux" "AlmostFull.hs" "xmonad.o" "xmobar.conf~")
+
+ ("/home/pranjal/Dropbox/Fa12/9.20/project/" (20674 20834) "red-cichlid.jpg" "presentation.pdf" "cichlid-3.jpg" "lizards.png" "./" "presentation.tex~" "fisher.jpg" "starling-nest.jpeg" "../" "peacock.jpg" "two-ornaments.jpg" "presentation.bib~" "presentation.toc" "giant_elk.jpg" "2012-12-03-035026_622x573_scrot.png" "giant-elk-2.jpg" "presentation.out" "cichlid-2.jpg" "presentation.bib" "presentation.log" "transmission-color.jpg" "presentation.snm" "presentation.bbl" "presentation.tex" "presentation.aux" "presentation.nav" "pronghorn-survival.jpg" "paradise.jpg" "giraffe.jpg" "presentation.blg" "cichlid-diversity.jpg")
+
+ ("/home/pranjal/Dropbox/Fa12/8.13/trapping/paper/" (20648 32204) "paper.bbl" "cal.png" "stokes.tex" "paper.out" "PranjalVachaspati_trapping.pdf" "cal-raw.png" "paper.bib" "vision-variances-1.png" "paper.tex~" "kbs-trend.png" "psd-single.png" "paper.bib~" "./" "paper.blg" "paperNotes.bib" "cal-raw.tex" "psd-alphas-trend.png" "vision-variances-1.tex" "kbs-trend.tex" "../" "paper.tex" "paper.aux" "qpd-variances.png" "psd-alphas-trend.tex" "vision-variances.png" "cal-all.tex" "stokes.png" "psd-single.tex" "brownian-raw.tex" "cal-all.png" "vision-variances.tex" "brownian-raw.png" "cal.tex" "qpd-variances.tex" "paper.log")
+
+ ("/home/pranjal/Dropbox/Fa12/6.s195/6.s195/common-lib/" (20673 5012) "Fifo.bsv" "NonBlockingCacheCompBuff.bsv" ".git/" "LoadBuffer.bsv" "StoreBuffer.bsv" "./" "TestBench.bsv" "Memory.bsv" "Scoreboard.bsv" "Ehr.bsv" "WaitBuffer.bsv" "NonBlockingCache.bsv" "BypassCop.bsv" "../" "AddrPred.bsv" "Decode.bsv" "Types.bsv" "TaggedMemory.bsv" "Cache.bsv" "MemTypes.bsv" "ProcTypes.bsv" "Rand.bsv" "Cop.bsv" "Exec.bsv" "IMemory.bsv" "MemoryFar.bsv" "DMemory.bsv" "CompletionBuffer.bsv" "FreeList.bsv" "RFile.bsv" "DirPred.bsv" "BypassRFile.bsv" "Rand.cpp")
+
+ ("/home/pranjal/Dropbox/Fa12/6.s195/6.s195/" (20669 37941) "common-lib/" "www/" "./" "smips" "lab1/" "objdump2vmh.pl" "../" "bibs/" "compiler/" "students/" "OldFiles/" "gty.tgz" "programs/" "build-caca-smips/")
+
+ ("/home/pranjal/Dropbox/Fa12/6.s195/" (20669 36710) "./" "6.s195/" "lab8/" "../" "final/" "lab3/")
+
+ ("/home/pranjal/Dropbox/Fa12/8.13/reldyn/paper/" (20672 10699) "paper.bbl" "paper.pdf" ".#paper.tex" "paper.out" "gamma-k.tex" "paper.bib" "paper.tex~" "raw-rad-cal.tex" "paper.bib~" "raw-fit.png" "./" "vel-k.tex" "paper.blg" "paperNotes.bib" "vel-k.png" "raw-fit.tex" "magcal.png" "layout.jpg" "../" "paper.tex" "paper.aux" "single-b.tex" "em-xerr.tex" "em-xerr.png" "magcal.tex" "em-noxerr.tex" "single-b.png" "raw-rad-cal.png" "em-noxerr.png" "gamma-k.png" "paper.log")
+
+ ("/home/pranjal/Dropbox/Fa12/6.869/project/presentation/" (20672 8883) "presentation.pdf" "./" "presentation.tex~" "../" "presentation.toc" "presentation.out" "presentation.log" "presentation.snm" "presentation.tex" "presentation.aux" "presentation.nav")
+
+ ("/home/pranjal/Dropbox/Fa12/6.869/project/" (20672 5347) "./" "proposal.txt" "videos/" "../" "references/" "pocket_ims/" "code/" "sift/" "presentation/" "test_vid.avi" "proposal.txt~")
+
+ ("/home/pranjal/Dropbox/Fa12/6.869/project/code/poolvis/" (20672 1320) ".git/" "./" "../" "util.pyc" "util.py" "poolVision.py~" "poolVision.pyc" "poolVision.py" "__init__.py" "util.py~")
+
+ ("/home/pranjal/Dropbox/Fa12/6.869/project/code/" (20659 7639) "./" "SelectAboves.m~" "SelectAboves.m" "{'myState':'france', 'myCollege':'dicks university', 'theirState':'germany', 'theirCollege':'balls balls balls', 'amount':'6900'}" "../" "poolvis/" "ReadVideo.m~" "ReadVideo.m")
+
+ ("/home/pranjal/Dropbox/Fa12/6.869/" (20633 58920) "./" "pset2/" "pset3/" "../" "pset1/" "project/" "pset4/")
+
+ ("/home/pranjal/Dropbox/Fa12/8.13/reldyn/" (20668 38125) "analyze.pyc" "paper/" "./" "../" "approx.nb" "analyze.py" "plot/" "analyze.py~" "presentation/" "data/")
+
+ ("/home/pranjal/Dropbox/Fa12/8.13/reldyn/plot/" (20668 37543) "makesingle-b.tex" "em-noxerr.plot" "makecal.tex~" "makeraw-fit.tex~" "raw-rad-cal.tex" "./" "raw-fit.copy" "em-noxerr.plot~" "makesingle-b.pdf" "single-b.plot~" "magcal.copy" "makeraw-rad-cal.aux" "em-noxerr.copy" "raw-fit.tex" "em-xerr.plot" "makeraw-rad-cal.pdf" "../" "makeem-xerr.tex" "makeraw-rad-cal.log" "raw-rad-cal.copy" "makesingle-b.aux" "single-b.tex" "Makefile~" "raw-rad-cal.plot~" "makemagcal.tex" "raw-fit.plot~" "single-b.copy" "Makefile" "makesingle-b.log" "raw-fit.plot" "em-xerr.tex" "makeraw-fit.tex" "makecal.tex" "makeraw-rad-cal.tex" "single-b.plot" "makeem-noxerr.tex" "magcal.tex" "em-xerr.plot~" "em-noxerr.tex" "magcal.plot~" "em-xerr.copy" "raw-rad-cal.plot" "magcal.plot")
+
+ ("/home/pranjal/Dropbox/Fa12/8.13/reldyn/presentation/" (20668 38867) "presentation.pdf" "raw-fit.png" "./" "presentation.tex~" "raw-fit.tex" "magcal.png" "layout.jpg" "../" "equipview.jpg" "single-b.tex" "em-xerr.tex" "presentation.toc" "em-xerr.png" "presentation.out" "magcal.tex" "presentation.log" "newton.jpg" "em-noxerr.tex" "presentation.snm" "presentation.tex" "single-b.png" "presentation.aux" "missfont.log" "presentation.nav" "em-noxerr.png" "velsect.png" "einstein.jpg")
+
+ ("/home/pranjal/Dropbox/Fa12/9.20/" (20667 47816) "assignment2.log" "assignment3.tex~" "assignment3.tex" "ec2.tex" "projectprop.pdf" "ec2.pdf" "assignment4.log" "assignment5.aux" "assignment4.pdf" "./" "projectprop.aux" "assignment2.aux" "assignment6.aux" "assignment2.tex~" "assignment1~" "assignment6.pdf" "assignment1" "assignment6.tex~" "../" "assignment5.tex" "project/" "assignment6.tex" "assignment2.tex" "assignment4.tex~" "assignment3.log" "ec2.log" "assignment4.aux" "assignment2.pdf" "assignment3.aux" "projectprop.tex" "ec2.tex~" "assignment4.tex" "projectprop.log" "projectprop.tex~" "assignment6.log" "assignment5.pdf" "ec2.aux" "assignment5.tex~" "assignment5.log" "assignment3.pdf")
+
+ ("/home/pranjal/Dropbox/Fa12/8.05/homework/pset10/" (20665 4032) "pset10.aux" "./" "pset10.tex" "pset10.pdf" "../" "pset10.tex~" "pset10.log")
+
+ ("/home/pranjal/Dropbox/Fa12/8.13/reldyn/data/" (20666 58566) "Nov26.zip" "B85Nov21/" "B90Nov19/" "B95Nov21/" "B105Nov26/" "./" "B65Nov26/" "B100Nov14/" "CalNov12_1.Spe" "../" "emfits/" "nov21.zip" "CalNov16_1.spe" "CalNov19_AfterFixing.Spe" "raw_cal_pts" "CalNov21_1.Spe" "MagnetCal/" "Nov8Calibration.Spe" "mag_fit/" "raw_with_fit/" "very-long-cal.Spe" "B80Nov14/" "single_b_fits/" "B60Nov16/" "B75Nov26/" "B70Nov21/" "CalNov26_1.Spe")
+
+ ("/home/pranjal/Dropbox/Fa12/8.05/homework/" (20660 4859) "pset10/" "pset5/" "./" "pset2/" "pset9/" "pset6/" "pset3/" "../" "pset1/" "pset4/" "pset7/" "pset8/")
+
+ ("/home/pranjal/Dropbox/Fa12/8.05/handouts/" (20575 62608) "./" "../" "Downloads/")
+
+ ("/home/pranjal/Dropbox/Fa12/8.05/" (20575 62554) "./" "handouts/" "../" "homework/" "recitation/" "notes/")
+
+ ("/home/pranjal/Dropbox/Fa12/" (20634 53784) "numpy-ref.pdf" "8.13/" "8.05/" "UROP/" "./" "6.s195/" "Putz/" "scipy-ref.pdf" "../" "9.20/" "6.869/")
+
+ ("/home/pranjal/Dropbox/Fa12/8.13/reldyn/data/mag_fit/" (20663 45756) "5" "3" "./" "../" "2" "1" "4" "6")
+
+ ("/home/pranjal/Dropbox/Fa12/8.13/trapping/presentation/plot/" (20663 41121) "cal.png" "makevision-variances-1.aux" "brownian-raw.plot" "makepsd-single.pdf" "makevision-variances-1.log" "fid.eps" "stokes.tex" "makecal-raw.tex" "makebrownian-raw.pdf" "makepsd-single.tex" "cal-raw.png" "makebrownian-raw.log" "stokes.plot" "vision-variances-1.png" "kbs-trend.plot~" "psd-single.plot~" "kbs-trend.png" "vision-variances-1.plot~" "vision-variances-1.plot" "psd-single.eps" "psd-single.png" "makebrownian-raw.tex" "./" "makestokes.aux" "makeqpd-variances.log" "makekbs-trend.tex" "makekbs-trend.pdf" "cal-raw.eps" "makestokes.tex" "makecal.log" "psd-alphas-trend.eps" "makepsd-alphas-trend.aux" "psd-single.plot" "fid.tex" "makecal-raw.tex~" "makevision-variances.pdf" "cal-raw.tex" "brownian-raw.plot~" "makecal-raw.log" "cal-all.plot" "cal.plot" "psd-alphas-trend.png" "stokes.eps" "vision-variances-1.tex" "makepsd-single.aux" "kbs-trend.tex" "../" "makepsd-alphas-trend.pdf" "brownian-raw.eps" "qpd-variances.plot" "qpd-variances.png" "vision-variances.plot~" "makevision-variances-1.pdf" "Makefile~" "cal.eps" "makestokes.pdf" "makevision-variances.tex" "makekbs-trend.log" "psd-alphas-trend.tex" "makepsd-alphas-trend.tex" "Makefile" "vision-variances.png" "makecal-raw.pdf" "cal-all.tex" "makepsd-alphas-trend.log" "makecal-raw.aux" "makecal.tex" "makevision-variances-1.tex" "makeqpd-variances.tex" "makepsd-single.tex~" "stokes.png" "qpd-variances.eps" "makevision-variances.log" "psd-alphas-trend.plot" "makevision-variances.aux" "psd-single.tex" "makepsd-single.log" "cal-all.eps" "vision-variances.plot" "makeqpd-variances.aux" "cal-raw.plot" "makecal-all.aux" "makecal-all.pdf" "cal-all.plot~" "kbs-trend.plot" "kbs-trend.eps" "brownian-raw.tex" "qpd-variances.plot~" "cal-all.png" "vision-variances.tex" "brownian-raw.png" "makecal.aux" "stokes.plot~" "cal.plot~" "psd-single-1.png" "makekbs-trend.aux" "cal.tex" "vision-variances.eps" "makecal-all.tex" "makebrownian-raw.aux" "makestokes.log" "psd-single-0.png" "cal-raw.plot~" "makecal.pdf" "psd-alphas-trend.plot~" "makecal-all.log" "vision-variances-1.eps" "qpd-variances.tex" "makeqpd-variances.pdf")
+
+ ("/home/pranjal/Dropbox/Fa12/8.13/reldyn/data/emfits/" (20663 44088) "./" "../" "main")
+
+ ("/home/pranjal/Dropbox/Fa12/8.13/reldyn/data/single_b_fits/" (20663 42070) "52" "32" "30" "./" "37" "42" "45" "../" "50" "35" "40" "47")
+
+ ("/home/pranjal/Dropbox/Fa12/8.13/reldyn/data/raw_with_fit/50/" (20663 39895) "420" "./" "450" "460" "440" "../" "390" "410" "470" "400" "430" "480")
+
+ ("/home/pranjal/Dropbox/Fa12/8.13/reldyn/data/raw_with_fit/" (20663 39782) "52/" "32/" "30/" "./" "37/" "42/" "45/" "../" "50/" "35/" "40/" "47/")
+
+ ("/home/pranjal/Dropbox/Fa12/8.13/trapping/presentation/" (20647 45859) "cal.png" "sift-2.png" "out.ogv" "out-1.ogv" "vision-variances-1.png" "presentation.pdf" "./" "presentation.tex~" "sift-1.jpg" "vision-variances-1.tex" "../" "trap-1.png" "qpd-variances.png" "qpd.gif" "vision-variances.png" "cal-all.tex" "presentation.toc" "plot/" "trap-movie-1/" "presentation.out" "trap-2.png" "qpd.png" "presentation.log" "brownian-raw.tex" "cal-all.png" "vision-variances.tex" "presentation.snm" "brownian-raw.png" "presentation.tex" "presentation.aux" "cal.tex" "presentation.nav" "trap-1.gif" "qpd-variances.tex" "data/")
+
+ ("/home/pranjal/Dropbox/Fa12/8.13/reldyn/data/B60Nov16/" (20660 19203) "B60V1.802.Spe" "B60V2.051.Spe" "B60V2.007.Spe" "./" "B60V2.198.Spe" "B60V2.100.Spe" "B60V2.300.Spe" "../" "B60V1.850.Spe" "B60V1.902.Spe" "B60V2.150.Spe" "B60V1.949.Spe")
+
+ ("/home/pranjal/Dropbox/Fa12/8.13/trapping/" (20649 8692) "sift-frame.jpg" "paper/" "jfeatherPresenation.pdf" "movingbead1.avi" "./" "../" "qpd-cal.zip" "vision.nb" "qpd-cal/" "Onion/" "presentation/" "brownian/" ".dropbox" "stokes/" "frames/")
+
+ ("/home/pranjal/Dropbox/Fa12/8.13/" (20636 9994) "datagathering2/" "./" "sample-zipped/" "../" "photoelectric/" "reldyn/" "nmr/" "trapping/" "datagathering1/" "poisson/" "michelson/")
+
+ ("/home/pranjal/Dropbox/notebooks/" (20660 12783) "Untitled2.ipynb" "./" "DataGathering2.ipynb" "../" "reldyn.ipynb" "poolvision.ipynb" "Untitled1.ipynb" "novice.ipynb" "trapping.ipynb")
+
+ ("/home/pranjal/Dropbox/Fa12/8.13/reldyn/data/B90Nov19/" (20660 13869) "./" "B90A0.7V4.2.Spe" "B90A0.7V3.4.Spe" "../" "B90A0.7V3.6.Spe" "B90A0.7V4.0.Spe" "B90A0.7V3.8.Spe" "B90A0.7V3.7.Spe" "B90A0.7V3.3.Spe" "B90A0.7V3.5.Spe" "B90A0.7V4.1.Spe" "B90A0.7V3.9.Spe")
+
+ ("/home/pranjal/Dropbox/Fa12/8.13/reldyn/data/B100Nov14/" (20660 13869) "./" "B100A0.7V4.6.Spe" "../" "B100A0.7V4.7.Spe" "B100A0.7V3.9.Spe" "B100A0.7V4.4.Spe" "B100A0.7V4.0.Spe" "B100A0.7V4.8.Spe" "B100A0.7V4.5.Spe" "B100A0.7V4.2.Spe" "B100A0.7V4.3.Spe" "B100A0.7V4.1.Spe")
+
+ ("/home/pranjal/Dropbox/Fa12/8.13/reldyn/data/B80Nov14/" (20660 13869) "B80A0.7V3.5.Spe" "./" "B80A0.7V3.4.Spe" "B80A0.7V2.7.Spe" "B80A0.7V3.0.Spe" "B80A0.7V3.1.Spe" "../" "B80A0.7V2.901.Spe" "B80A0.7V2.8.Spe" "B80A0.7V3.6.Spe" "B80A0.7V3.199.Spe" "B80A0.7V3.3.Spe")
+
+ ("/home/pranjal/Dropbox/Fa12/8.13/reldyn/data/B90/" (20643 4817) "./" "B90V4.1.Spe" "B90V3.8.Spe" "../" "B90V3.9.Spe" "B90V3.7.Spe" "B90V4.0.Spe")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
