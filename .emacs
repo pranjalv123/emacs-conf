@@ -132,12 +132,6 @@
  )
 
 
-;Set up gnus for gmail
-(setq gnus-select-method '(nnimap "gmail"
-				  (nnimap-address "imap.gmail.com")
-				  (nnimap-server-port 993)
-				  (nnimap-stream ssl)))
-
 (require 'font-lock)
 (global-font-lock-mode t)
 (setq font-lock-maximum-decoration t)
@@ -156,8 +150,6 @@
  
 (defun make-backup-file-name (file)
 (concat "/home/pranjal/Dropbox/emacs/backups/" (file-name-nondirectory file) "~"))
-
-(desktop-save-mode 1)
 
 (global-set-key (kbd "C-<tab>") 'yas/insert-snippet)
 
@@ -191,62 +183,60 @@
 (custom-set-variables
      '(haskell-mode-hook '(turn-on-haskell-indentation)))
 
-(setq user-full-name "Pranjal Vachaspati")
-(setq user-mail-address "pranjal@mit.edu")
-
-;;Tell Emacs to use GNUTLS instead of STARTTLS
-;;to authenticate when sending mail.
-
-(setq starttls-use-gnutls t)
-
-;;Tell Emacs about your mail server and credentials
-
-(setq send-mail-function 'smtpmail-send-it
-message-send-mail-function 'smtpmail-send-it
-smtpmail-starttls-credentials
-'(("smtp.gmail.com" 587 nil nil))
-smtpmail-auth-credentials
-(expand-file-name "~/.authinfo.gpg")
-smtpmail-default-smtp-server "smtp.gmail.com"
-smtpmail-smtp-server "smtp.gmail.com"
-smtpmail-smtp-service 587
-smtpmail-debug-info t)
-(require 'smtpmail)
-
-;; wanderlust
-(autoload 'wl "wl" "Wanderlust" t)
-(autoload 'wl-other-frame "wl" "Wanderlust on new frame." t)
-(autoload 'wl-draft "wl-draft" "Write draft with Wanderlust." t)
-
-;; IMAP
-(setq elmo-imap4-default-server "imap.gmail.com")
-(setq elmo-imap4-default-user "pranjal.vachaspati@gmail.com") 
-(setq elmo-imap4-default-authenticate-type 'clear) 
-(setq elmo-imap4-default-port '993)
-(setq elmo-imap4-default-stream-type 'ssl)
-
-(setq elmo-imap4-use-modified-utf7 t) 
-
-(setq wl-default-folder "%inbox")
-(setq wl-default-spec "%")
-(setq wl-draft-folder "%[Gmail]/Drafts") ; Gmail IMAP
-(setq wl-trash-folder "%[Gmail]/Trash")
-
-(setq wl-folder-check-async t) 
-
-(setq elmo-imap4-use-modified-utf7 t)
-
-(autoload 'wl-user-agent-compose "wl-draft" nil t)
-(if (boundp 'mail-user-agent)
-    (setq mail-user-agent 'wl-user-agent))
-(if (fboundp 'define-mail-user-agent)
-    (define-mail-user-agent
-      'wl-user-agent
-      'wl-user-agent-compose
-      'wl-draft-send
-      'wl-draft-kill
-      'mail-send-hook))
 
 
 (setq tramp-default-method "scpc")
 (setq tramp-auto-save-directory "~/tmp")
+
+(autoload 'octave-mode "octave-mod" nil t)
+(setq auto-mode-alist
+      (cons '("\\.m$" . octave-mode) auto-mode-alist))
+
+
+(autoload 'wl "wl" "Wanderlust" t)
+(setq bbdb-file "~/.emacs.d/bbdb")           ;; keep ~/ clean; set before loading
+(require 'bbdb) 
+(bbdb-initialize)
+(setq 
+    bbdb-offer-save 1                        ;; 1 means save-without-asking
+
+    
+    bbdb-use-pop-up t                        ;; allow popups for addresses
+    bbdb-electric-p t                        ;; be disposable with SPC
+    bbdb-popup-target-lines  1               ;; very small
+    
+    bbdb-dwim-net-address-allow-redundancy t ;; always use full name
+    bbdb-quiet-about-name-mismatches 2       ;; show name-mismatches 2 secs
+
+    bbdb-always-add-address t                ;; add new addresses to existing...
+                                             ;; ...contacts automatically
+    bbdb-canonicalize-redundant-nets-p t     ;; x@foo.bar.cx => x@bar.cx
+
+    bbdb-completion-type nil                 ;; complete on anything
+
+    bbdb-complete-name-allow-cycling t       ;; cycle through matches
+                                             ;; this only works partially
+
+    bbbd-message-caching-enabled t           ;; be fast
+    bbdb-use-alternate-names t               ;; use AKA
+
+
+    bbdb-elided-display t                    ;; single-line addresses
+
+    ;; auto-create addresses from mail
+    bbdb/mail-auto-create-p 'bbdb-ignore-some-messages-hook   
+    bbdb-ignore-some-messages-alist ;; don't ask about fake addresses
+    ;; NOTE: there can be only one entry per header (such as To, From)
+    ;; http://flex.ee.uec.ac.jp/texi/bbdb/bbdb_11.html
+
+    '(( "From" . "no.?reply\\|DAEMON\\|daemon\\|facebookmail\\|twitter"))
+)
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
+(add-to-list 'auto-mode-alist '("\\.ci\\'" . c++-mode))
+
+(setq mouse-autoselect-window t)
+
+(define-minor-mode sticky-buffer-mode
+  "Make the current window always display this buffer."
+  nil " sticky" nil
+  (set-window-dedicated-p (selected-window) sticky-buffer-mode))
